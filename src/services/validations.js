@@ -1,4 +1,15 @@
 // TODO: Refactor validation function to follow the defined validations rules
-const isValid = () => Math.random() >= 0.5;
+function isValid(gamerTag) {
+    if (gamerTag.length < 8) {
+        return 'Invalid - gamertag length must be at least 8 characters';
+    }
 
+    const specialCharacters = ['&', '$', '!', 'è', '§', 'à', '_'];
+    if (!specialCharacters.some((char) => gamerTag.includes(char))) {
+        return 'Invalid - gamertag must contain at least a special character';
+    }
+
+    // Si toutes  conditions sont remplies, le gamerTag est valide
+    return true;
+}
 exports.isValid = isValid;
