@@ -7,3 +7,9 @@ describe('validations tests suites - isValid', () => {
         expect(result).toBeDefined();
     });
 });
+test('should return false when gametag  length is length less than 8 characters', () => {
+    const result = isValid('coloo');
+    expect(result).toBeFalsy();
+});
+
+
