@@ -22,7 +22,10 @@ jobs:
               run: |
                   npm install
             - name: 'Checking code'
-        
               run: |
                     npm run prettier
+                    
+            - name: 'Checking code with lint'
+              run: |
+                  npm run lint
             
