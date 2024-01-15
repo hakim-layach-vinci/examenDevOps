@@ -21,4 +21,8 @@ jobs:
             - name: 'Install dependencies'
               run: |
                   npm install
+            - name: 'Checking code'
+        
+              run: |
+                    npm run prettier
             
