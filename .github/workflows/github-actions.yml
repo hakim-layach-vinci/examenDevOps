@@ -33,6 +33,11 @@ jobs:
               run: |
                   npm run test
 
+            - name: 'build app'
+              run: |
+                  npm run build
+
+
                   
 
             
