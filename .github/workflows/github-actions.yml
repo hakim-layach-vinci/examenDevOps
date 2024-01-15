@@ -3,7 +3,8 @@ name: Github Actions CI
 on:
     push:
       branches:
-        - main  
+        -feat/pipeline
+         
 jobs:
     build:
         runs-on: ubuntu-latest
