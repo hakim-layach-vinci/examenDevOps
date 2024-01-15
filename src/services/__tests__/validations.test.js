@@ -12,4 +12,8 @@ test('should return false when gametag  length is length less than 8 characters'
     expect(result).toBeFalsy();
 });
 
+test('should return true when gametag  length is  equal to or greater than 8 characters', () => {
+    const result = isValid('popopopopopp');
+    expect(result).toBeTruthy();
+});
 
